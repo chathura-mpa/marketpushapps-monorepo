@@ -23,6 +23,7 @@
         "sourceMap": true,
         "outDir": "./dist",
         "baseUrl": ".",
+        "composite": true,
         "paths": {
             "@marketpushapps/*": [
                 "packages/*/src"

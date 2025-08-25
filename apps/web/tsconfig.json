@@ -2,7 +2,11 @@
     "extends": "../../tsconfig.json",
     "compilerOptions": {
         "outDir": "./dist",
-        "jsx": "react-jsx"
+        "jsx": "react-jsx",
+        "baseUrl": ".",
+        "paths": {
+            "@marketpushapps/*": ["../../packages/*/src", "../../packages/*/dist"]
+        }
     },
     "include": [
         "src/**/*"
@@ -10,5 +14,10 @@
     "exclude": [
         "dist",
         "node_modules"
+    ],
+    "references": [
+        { "path": "../../packages/utils" },
+        { "path": "../../packages/ui" },
+        { "path": "../../packages/shared" }
     ]
 }
