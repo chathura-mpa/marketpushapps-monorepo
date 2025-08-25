@@ -1,0 +1,52 @@
+{
+  "name": "@marketpushapps/ui",
+  "version": "1.0.0",
+  "description": "React UI components for MarketPushApps projects",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "typescript",
+    "marketpushapps"
+  ],
+  "author": "MarketPushApps",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/marketpushapps-monorepo.git",
+    "directory": "packages/ui"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "prepublishOnly": "yarn build",
+    "publish:package": "npm publish --access public",
+    "version:package": "npm version patch"
+  },
+  "dependencies": {
+    "@marketpushapps/shared": "*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  }
+}

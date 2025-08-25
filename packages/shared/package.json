@@ -1,0 +1,20 @@
+{
+  "name": "@marketpushapps/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

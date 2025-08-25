@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Generated files
+*.min.js
+*.min.css
+*.bundle.js
+
+# Lock files
+yarn.lock
+package-lock.json
+
+# Config files that should maintain their format
+.eslintrc.js
+.prettierrc
+tsconfig.json
+
+# Documentation
+CHANGELOG.md
+README.md
+
+# Other
+.git/
+.vscode/
+.idea/
