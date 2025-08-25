@@ -41,9 +41,6 @@
     "publish:package": "npm publish --access public",
     "version:package": "npm version patch"
   },
-  "dependencies": {
-    "@marketpushapps/shared": "*"
-  },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "typescript": "^5.0.0"
